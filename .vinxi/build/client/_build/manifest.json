@@ -1,0 +1,73 @@
+{
+  "\u0000virtual:#vinxi/handler/client.css": {
+    "file": "assets/client-e3c16358.css",
+    "src": "\u0000virtual:#vinxi/handler/client.css"
+  },
+  "_Counter-434d9d8f.js": {
+    "file": "assets/Counter-434d9d8f.js",
+    "imports": [
+      "_routing-b4b0f459.js"
+    ]
+  },
+  "_components-bd2c5365.js": {
+    "file": "assets/components-bd2c5365.js",
+    "imports": [
+      "_routing-b4b0f459.js"
+    ]
+  },
+  "_routing-b4b0f459.js": {
+    "file": "assets/routing-b4b0f459.js"
+  },
+  "node_modules/.pnpm/shikiji@0.9.19/node_modules/shikiji/dist/onig.wasm": {
+    "file": "assets/onig-fd885c2d.wasm",
+    "src": "node_modules/.pnpm/shikiji@0.9.19/node_modules/shikiji/dist/onig.wasm"
+  },
+  "src/routes/[...404].tsx?pick=default&pick=$css": {
+    "file": "assets/_...404_-d0b1affd.js",
+    "imports": [
+      "_routing-b4b0f459.js",
+      "_components-bd2c5365.js"
+    ],
+    "isDynamicEntry": true,
+    "isEntry": true,
+    "src": "src/routes/[...404].tsx?pick=default&pick=$css"
+  },
+  "src/routes/about.tsx?pick=default&pick=$css": {
+    "file": "assets/about-5aa36a5c.js",
+    "imports": [
+      "_routing-b4b0f459.js",
+      "_Counter-434d9d8f.js",
+      "_components-bd2c5365.js"
+    ],
+    "isDynamicEntry": true,
+    "isEntry": true,
+    "src": "src/routes/about.tsx?pick=default&pick=$css"
+  },
+  "src/routes/index.tsx?pick=default&pick=$css": {
+    "file": "assets/index-54b83206.js",
+    "imports": [
+      "_routing-b4b0f459.js",
+      "_Counter-434d9d8f.js",
+      "_components-bd2c5365.js"
+    ],
+    "isDynamicEntry": true,
+    "isEntry": true,
+    "src": "src/routes/index.tsx?pick=default&pick=$css"
+  },
+  "virtual:#vinxi/handler/client": {
+    "css": [
+      "assets/client-e3c16358.css"
+    ],
+    "dynamicImports": [
+      "src/routes/about.tsx?pick=default&pick=$css",
+      "src/routes/index.tsx?pick=default&pick=$css",
+      "src/routes/[...404].tsx?pick=default&pick=$css"
+    ],
+    "file": "assets/client-4cf28e26.js",
+    "imports": [
+      "_routing-b4b0f459.js"
+    ],
+    "isEntry": true,
+    "src": "virtual:#vinxi/handler/client"
+  }
+}
