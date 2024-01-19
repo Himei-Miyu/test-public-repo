@@ -27,6 +27,7 @@ jobs:
         run: pnpm run build
 
       - name: Deploy to Cloudflare Pages
+        if: success()
         run: |
           curl -X POST "https://api.cloudflare.com/client/v4/accounts/${{ secrets.ACCOUNT_ID }}/pages/projects/${{ secrets.PROJECT_ID }}/deployments" \
           -H "Authorization: Bearer ${{ secrets.CLOUDFLARE_API_KEY }}" \
