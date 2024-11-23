@@ -90,6 +90,7 @@ upload() {
     	}
     	[[ $IS_PRRSERVED == "y" ]] && {
     		git pull origin "$3" --rebase
+    		sleep 2
     		$IS_EDITOR $(git diff --name-only | uniq)
     		git add .
     		git rebase --continue
