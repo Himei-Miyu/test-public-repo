@@ -94,7 +94,10 @@ upload() {
     		$IS_EDITOR $(git diff --name-only | uniq)
     		git add .
     		git rebase --continue
-    		git push --set-upstream origin "$3" || echo -e "$FAIL $HMC Upload Failed"
+    		git push --set-upstream origin "$3" || {
+    			echo -e "$FAIL $HMC Upload Failed"
+    			return 1;
+    		}
     	}
     }
     echo -e "$SUCCESS $HMC Upload Successfully"
