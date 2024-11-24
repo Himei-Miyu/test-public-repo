@@ -90,11 +90,20 @@ upload() {
     	}
     	[[ $IS_PRRSERVED == "y" ]] && {
     		git pull origin "$3" --rebase
-    		sleep 2
-    		$IS_EDITOR $(git diff --name-only | uniq)
+    		local -a CONFLICT_FILES=($(git diff --name-only | uniq))
+    		echo -e "$INFO This is all conflict files :" \
+    				"\n$INFO ${CONFLICT_FILES[@]}" \
+    				"\n$INFO - choice between you or friend code" \
+    				"\n$INFO - delete unwanted code" \
+    				"\n$INFO - save file and quit"
+    		read -p "$(printf $INFO) press enter key to continue"
+    		$IS_EDITOR ${CONFLICT_FILES[@]}
     		git add .
     		git rebase --continue
-    		git push --set-upstream origin "$3" || echo -e "$FAIL $HMC Upload Failed"
+    		git push --set-upstream origin "$3" || {
+    			echo -e "$FAIL $HMC Upload Failed"
+    			return 1;
+    		}
     	}
     }
     echo -e "$SUCCESS $HMC Upload Successfully"
