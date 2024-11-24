@@ -4,9 +4,9 @@
 |-----------|------------------|
 | `USERNAME`  | ระบุชื่อ Github     |
 | `EMAIL`     | ระบุ Email Github |
-| `BRANCH` | - |
-| `REPOSITORY` | - |
-| `COMMIT_MESSAGE` | - |
+| `BRANCH` | ระบุสาขาใน repo |
+| `REPOSITORY` | ระบุชื่อ repo |
+| `COMMIT_MESSAGE` | ระบุข้อความ commit |
 
 ## How to use
 
