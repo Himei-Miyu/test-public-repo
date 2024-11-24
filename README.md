@@ -1,3 +1,2 @@
-# Upload Script
+# Utility Script-GitUploader
 - now current in develop
-doing test branch
