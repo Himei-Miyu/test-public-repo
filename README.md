@@ -2,8 +2,11 @@
 ## Syntax
 | Parameter | Description      |
 |-----------|------------------|
-| USERNAME  | ระบุชื่อ Github     |
-| EMAIL     | ระบุ Email Github |
+| `USERNAME`  | ระบุชื่อ Github     |
+| `EMAIL`     | ระบุ Email Github |
+| `BRANCH` | - |
+| `REPOSITORY` | - |
+| `COMMIT_MESSAGE` | - |
 
 ## How to use
 
