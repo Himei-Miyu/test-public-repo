@@ -1,5 +1,6 @@
 # Utility Script GitUploader
 ## Syntax
+|-|-|
 |Parameter|Description|
 |USERNAME|ระบุชื่อ Github|
 |EMAIL|ระบุ Email Github|
